@@ -2,20 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>java-data-structures-and-algorithms</artifactId>
+    <artifactId>linked-list</artifactId>
     <groupId>org.xzhi</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>linked-list</artifactId>
-  <description>链表</description>
-  <packaging>pom</packaging>
-
-  <modules>
-    <module>single-linked-list</module>
-    <module>double-linked-list</module>
-    <module>circle-single-linked-list</module>
-  </modules>
+  <artifactId>circle-single-linked-list</artifactId>
+  <description>环形单向链表</description>
 
 </project>
