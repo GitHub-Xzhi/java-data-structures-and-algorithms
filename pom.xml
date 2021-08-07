@@ -28,6 +28,8 @@
 
   <modules>
     <module>linked-list</module>
+    <module>stack</module>
+    <module>sort</module>
   </modules>
 
   <dependencies>
