@@ -13,8 +13,9 @@
   <description>排序算法</description>
 
   <modules>
-    <module>sa-0-bubble-sort</module>
-    <module>sa-1-select-sort</module>
+    <module>sa-1-bubble-sort</module>
+    <module>sa-2-select-sort</module>
+    <module>sa-3-insert-sort</module>
   </modules>
 
 </project>
