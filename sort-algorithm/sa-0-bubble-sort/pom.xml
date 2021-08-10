@@ -8,6 +8,6 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>bubble-sort</artifactId>
+  <artifactId>sa-0-bubble-sort</artifactId>
 
 </project>

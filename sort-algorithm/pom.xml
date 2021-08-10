@@ -11,8 +11,10 @@
   <artifactId>sort-algorithm</artifactId>
   <packaging>pom</packaging>
   <description>排序算法</description>
+
   <modules>
-    <module>bubble-sort</module>
+    <module>sa-0-bubble-sort</module>
+    <module>sa-1-select-sort</module>
   </modules>
 
 </project>
