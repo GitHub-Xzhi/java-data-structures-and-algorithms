@@ -29,7 +29,8 @@
   <modules>
     <module>linked-list</module>
     <module>stack</module>
-    <module>sort</module>
+    <module>sort-algorithm</module>
+    <module>recursion</module>
   </modules>
 
   <dependencies>
