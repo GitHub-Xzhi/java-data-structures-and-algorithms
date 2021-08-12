@@ -2,8 +2,6 @@ package org.xzhi.bs;
 
 import com.google.common.base.Stopwatch;
 
-import java.util.Random;
-
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -16,16 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 public class BubbleSortDemo {
     public static void main(String[] args) {
         int[] a = {5, -1, 2, 3, 2, 1, 4, 8, 1};
-        // 压测
-        Random random = new Random();
-        int[] pressure = new int[80000];
-        for (int i = 0; i < pressure.length; i++) {
-            pressure[i] = (int) (Math.random() * 80000);
-        }
-        Stopwatch stopwatch = Stopwatch.createStarted();
-        sortOptimize(pressure);
-        stopwatch.stop();
-        log.info("[{}]", stopwatch.toString());
+        pressureTest(100000, false);
     }
 
     /**
@@ -68,5 +57,25 @@ public class BubbleSortDemo {
             }
             log.info("第[{}]趟排序后的数组{}", i + 1, array);
         }
+    }
+
+    /**
+     * 压测
+     *
+     * @param maxLength 数组最大长度
+     * @param printEle  是否打印元素
+     */
+    private static void pressureTest(int maxLength, boolean printEle) {
+        int[] pressure = new int[maxLength];
+        for (int i = 0; i < pressure.length; i++) {
+            pressure[i] = (int) (Math.random() * maxLength);
+        }
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        sortOptimize(pressure);
+        stopwatch.stop();
+        if (printEle) {
+            log.info("{}", pressure);
+        }
+        log.info("[{}]", stopwatch.toString());
     }
 }

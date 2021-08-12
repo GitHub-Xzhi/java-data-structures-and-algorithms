@@ -2,21 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>java-data-structures-and-algorithms</artifactId>
+    <artifactId>sort-algorithm</artifactId>
     <groupId>org.xzhi</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>sort-algorithm</artifactId>
-  <packaging>pom</packaging>
-  <description>排序算法</description>
-
-  <modules>
-    <module>sa-1-bubble-sort</module>
-    <module>sa-2-select-sort</module>
-    <module>sa-3-insert-sort</module>
-    <module>sa-4-shell-sort</module>
-  </modules>
+  <artifactId>sa-4-shell-sort</artifactId>
 
 </project>
